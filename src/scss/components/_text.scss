@@ -1,0 +1,15 @@
+@use 'utils';
+
+.title {
+  font-family: 'VT323', monospace;
+  @include utils.text(utils.rem(50px), 500, utils.$color-gray3, 50px);
+}
+
+.name {
+  margin-bottom: 100px;
+  @include utils.text(utils.rem(16px), 500, utils.$color-gray2, 19px);
+}
+
+.email {
+  @include utils.text(utils.rem(14px), 400, utils.$color-gray, 17px);
+}

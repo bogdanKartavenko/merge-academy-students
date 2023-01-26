@@ -1,10 +1,23 @@
 // COLORS
 $color-white: #fff;
+$color-white2: #EFEDED;
+$color-white3: #E7E6E6;
+$color-white4: #FBFBFB;
+$color-white5: #FDFDFD;
 $color-black: #000000;
+$color-black2: #0E0E0F;
 $color-bg: #1c1b22;
+$color-gray: #989191;
+$color-gray2: #302F2F;
+$color-gray3: #303030;
+$color-gray4: #292D32;
+$color-gray5: #8A8E97;
+$color-gray6: #1C1C1C;
 
 // FONTS
-$primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+$primary-font: 'Rubik', sans-serif;
 $base-font-size: 10px;
 
 // OFFSET

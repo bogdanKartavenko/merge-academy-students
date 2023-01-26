@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/style.scss" />
-    <title>Parcel by Merge</title>
-  </head>
-  <body>
-    <div class="container index-page">
-      <h1 class="title index-page__title">Parcel by Merge</h1>
-      <a href="https://merge.rocks" target="_blank" class="cover">
-        <img src="./assets/images/cover.png" alt="merge" />
-      </a>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/style.scss" />
+  <title>Cards</title>
+</head>
+
+<body>
+  <div class="card">
+    <div class="card__wrapper">
+      <h1 class="card__title title">Merge Academy students</h1>
+      <div class="card__wrapper--form">
+        <img class="card__svg--sun" src="/src/assets/svg/sun.svg" alt="sun">
+        <form class="card__form form">
+          <input class="card__input form__input" id="checkbox" type="checkbox">
+          <label class="card__label form__label" for="checkbox"></label>
+        </form>
+        <img class="card__svg--moon" src="/src/assets/svg/moon.svg" alt="moon">
+      </div>
     </div>
-    <script src="./index.js"></script>
-  </body>
+    <ul class="card__list" id="ul">
+    </ul>
+  </div>
+  <!-- SVG -->
+
+  <svg style="display: none;">
+    <symbol id="Github" width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M11.8992 0.562506C9.20777 0.560463 6.6035 1.51679 4.55296 3.26017C2.50243 5.00355 1.13962 7.42007 0.708677 10.0768C0.27773 12.7336 0.806803 15.457 2.20112 17.7591C3.59543 20.0613 5.76388 21.7918 8.318 22.6406C8.88519 22.7438 9.09144 22.3938 9.09144 22.0938C9.09144 21.825 9.08206 21.1125 9.07581 20.1672C5.92581 20.8516 5.26018 18.6484 5.26018 18.6484C4.74456 17.3391 4.00237 16.9922 4.00237 16.9922C2.97425 16.2891 4.0805 16.3031 4.0805 16.3031C5.218 16.3828 5.81487 17.4703 5.81487 17.4703C6.82581 19.2016 8.46644 18.7016 9.11175 18.4109C9.21487 17.6797 9.50862 17.1797 9.8305 16.8969C7.31487 16.6109 4.67112 15.6391 4.67112 11.2984C4.65477 10.173 5.0728 9.08454 5.83831 8.25938C5.72112 7.97188 5.33206 6.82188 5.94769 5.25938C5.94769 5.25938 6.90081 4.95626 9.06331 6.42188C9.98771 6.1705 10.9413 6.04231 11.8992 6.04063C12.8572 6.04243 13.8108 6.17062 14.7352 6.42188C16.8977 4.95626 17.8477 5.26094 17.8477 5.26094C18.4664 6.82032 18.0774 7.97188 17.9602 8.25938C18.6867 9.05157 19.1242 10.0609 19.1242 11.2984C19.1242 15.65 16.4758 16.6078 13.9524 16.8875C14.3586 17.2375 14.7211 17.9297 14.7211 18.9859C14.7211 20.5016 14.7071 21.7219 14.7071 22.0938C14.7071 22.3969 14.9117 22.75 15.4867 22.6391C18.0403 21.7892 20.2079 20.0579 21.6013 17.7553C22.9946 15.4527 23.5226 12.7293 23.0907 10.0728C22.6589 7.41639 21.2953 5.00048 19.2444 3.25785C17.1934 1.51522 14.5906 0.559722 11.8992 0.562506Z" />
+    </symbol>
+  </svg>
+  <script type="module" src="./index.js"></script>
+</body>
+
 </html>
