@@ -1,0 +1,154 @@
+@use 'utils';
+
+.card {
+    min-height: 100vh;
+
+    &__wrapper {
+        padding: 31px 66px;
+        min-height: 112px;
+        border-bottom: 1px solid #E7E6E6;
+        @include utils.flex(space-between, center);
+    }
+
+    &__wrapper--form {
+        max-width: 100px;
+        width: 100%;
+        @include utils.flex(space-between, center);
+    }
+
+    &__photo {
+        position: absolute;
+        right: 0;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin-bottom: 4px;
+    }
+
+    &__email {
+        @include utils.flex(center, center, row);
+        text-decoration: none;
+    }
+
+    &__email--svg {
+        margin-top: 2px;
+        margin-right: 2px;
+    }
+
+    &__list {
+        max-width: 992px;
+        @include utils.margin-auto;
+        @include utils.flex(start, center, row, wrap);
+        margin-top: 64px;
+        gap: 32px;
+    }
+
+    &__box {
+        position: relative;
+        width: 80px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:nth-last-child(1) {
+            border-left: 1px solid utils.$color-white3;
+        }
+    }
+
+    &__box--name {
+        position: absolute;
+        left: 104px;
+        top: 34px;
+    }
+
+    &__item {
+        position: relative;
+        max-width: 480px;
+        width: 100%;
+        height: 104px;
+        background: utils.$color-white4;
+        outline: 1px solid utils.$color-white3;
+        border-radius: 4px;
+        box-shadow: 1px 2px 8px rgba(113, 113, 113, 0.14);
+        @include utils.flex(space-between);
+    }
+
+    &__link {
+        border-radius: 12px;
+    }
+
+    &__svg {
+        width: 32px;
+        height: 32px;
+        border-radius: 12px;
+        fill: white;
+    }
+}
+
+.BGblack {
+    background-color: utils.$color-black2;
+}
+
+.title--black {
+    color: utils.$color-white;
+}
+
+.item--black {
+    background-color: utils.$color-gray4;
+    outline: 1px solid utils.$color-gray5;
+    color: utils.$color-white;
+}
+
+.svgBlack {
+    fill: utils.$color-white;
+}
+
+@include utils.media('desktop', max) {
+    .card {
+        min-height: 100vh;
+
+        &__wrapper {
+            padding: 24px 16px;
+        }
+
+        &__title {
+            max-width: 141px;
+        }
+
+        &__list {
+            margin: 56px 16px 56px 16px;
+            gap: 8px;
+            @include utils.flex(center,center,row,wrap);
+        }
+
+        &__item {
+            max-width: 343px;
+            height: 80px;
+        }
+
+        &__box {
+            width: 52px;
+        }
+
+        &__photo {
+            width: 32px;
+            height: 32px;
+        }
+        &__box--name {
+            top: 22px;
+            left: 60px;
+        }
+
+        &__svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    ;
+}

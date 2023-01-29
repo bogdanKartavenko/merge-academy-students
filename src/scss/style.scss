@@ -3,6 +3,6 @@
 @use './config/common';
 
 // Components
-@use './components/title';
-@use './components/cover';
-@use './components/index-page';
+@use './components/text';
+@use './components/card';
+@use './components/checkbox';
