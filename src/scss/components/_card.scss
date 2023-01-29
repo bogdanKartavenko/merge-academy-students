@@ -7,12 +7,13 @@
         padding: 31px 66px;
         min-height: 112px;
         border-bottom: 1px solid #E7E6E6;
-        @include utils.flex(space-between,center);
+        @include utils.flex(space-between, center);
     }
+
     &__wrapper--form {
         max-width: 100px;
         width: 100%;
-        @include utils.flex(space-between,center);
+        @include utils.flex(space-between, center);
     }
 
     &__photo {
@@ -28,9 +29,8 @@
     }
 
     &__email {
-        @include utils.flex(center,center,row);
+        @include utils.flex(center, center, row);
         text-decoration: none;
-    
     }
 
     &__email--svg {
@@ -40,7 +40,6 @@
 
     &__list {
         max-width: 992px;
-        width: 100%;
         @include utils.margin-auto;
         @include utils.flex(start, center, row, wrap);
         margin-top: 64px;
@@ -55,10 +54,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+
         &:nth-last-child(1) {
             border-left: 1px solid utils.$color-white3;
         }
     }
+
     &__box--name {
         position: absolute;
         left: 104px;
@@ -105,4 +106,49 @@
 
 .svgBlack {
     fill: utils.$color-white;
+}
+
+@include utils.media('desktop', max) {
+    .card {
+        min-height: 100vh;
+
+        &__wrapper {
+            padding: 24px 16px;
+        }
+
+        &__title {
+            max-width: 141px;
+        }
+
+        &__list {
+            margin: 56px 16px 56px 16px;
+            gap: 8px;
+            @include utils.flex(center,center,row,wrap);
+        }
+
+        &__item {
+            max-width: 343px;
+            height: 80px;
+        }
+
+        &__box {
+            width: 52px;
+        }
+
+        &__photo {
+            width: 32px;
+            height: 32px;
+        }
+        &__box--name {
+            top: 22px;
+            left: 60px;
+        }
+
+        &__svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    ;
 }

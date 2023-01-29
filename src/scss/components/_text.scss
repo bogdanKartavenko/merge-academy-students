@@ -13,3 +13,10 @@
 .email {
   @include utils.text(utils.rem(14px), 400, utils.$color-gray, 17px);
 }
+
+@include utils.media('desktop', max) {
+  .title {
+    font-family: 'VT323', monospace;
+    @include utils.text(utils.rem(24px), 400, utils.$color-gray3, 24px);
+  };
+}

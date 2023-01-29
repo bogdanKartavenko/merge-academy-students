@@ -67,6 +67,9 @@ function darkTheme() {
   const name = document.querySelectorAll('span');
   const item = document.querySelectorAll('li');
   const svgImage = document.querySelectorAll('img');
+  const svgMoon = document.getElementById('svg__moon');
+  const svgSun = document.getElementById('svg__sun');
+  const gitHub = document.getElementById('GitHub');
   
   name.forEach((el) => {
     el.classList.toggle('title--black');
@@ -82,6 +85,9 @@ function darkTheme() {
   
   BGbody.classList.toggle("BGblack");
   title.classList.toggle('title--black');
+  svgMoon.classList.toggle('black__moon');
+  svgSun.classList.toggle('black__sun');
+  gitHub.classList.toggle('svgBlack');
 }
 
 const checkbox = document.getElementById('checkbox');
